@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>tempConversion</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+      html {
+        background-color: burlywood;
+      }
+      form {
+        box-sizing: 0%;
+      }
+      div {
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        margin-top: 100px;
+        background-color:pink;
+        
+       }
+       #result-box {
+         width: 100%;
+      }
+      .btn-warning {
+        width: 7%;
+        border-radius: 20px;
+        padding: 10px;
+      }
+      @media screen and (min-width: 580px){
+        div, #result-box {
+          width: 100%;
+      }
+      .btn-warning {
+        width: 7%;
+    }
+  }
+      
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div>
+        <form id="tempCalc" onsubmit="calculateTemp(); return false">
+
+        <label for="temp">Enter the temperature you want to convert</label>
+        <br/>  
+        <input type="number" name="temp" id="temp">
+          <select name="temp-diff" id="temp_diff">
+            <option value="cel">Celsius</option>
+            <option value="far">Fahrenheit</option>
+          </select> 
+          <br><br/>         
+          <input type="submit" name="temp" class="btn btn-warning"> <br/>
+          <span id="result-box"></span> 
+      </form>  
+  </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
