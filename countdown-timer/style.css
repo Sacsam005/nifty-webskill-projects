@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(./image.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: -10rem;
+}
+
+.countdown-container {
+  display: flex;
+}
+
+.big-text {
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0 2rem;
+}
+
+span {
+  font-size: 2rem;
+}
+
+.container {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
